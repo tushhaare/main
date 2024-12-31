@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year, Jyoti!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom, #ff6f91, #ffc1c1);
+            color: #fff;
+        }
+        h1 {
+            font-size: 3rem;
+            margin: 0.5rem;
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        p {
+            font-size: 1.5rem;
+            color: #ffffff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .gif-container {
+            margin-top: 1rem;
+        }
+        img {
+            max-width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        button {
+            margin-top: 2rem;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 20px;
+            background-color: #ff577f;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        button:hover {
+            background-color: #e0476a;
+        }
+        footer {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.9rem;
+            color: #ffffff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Happy New Year, Jyoti! 🎉</h1>
+        <p>You're the best friend anyone could ever ask for. Wishing you a year full of joy and love! ❤️</p>
+        <div class="gif-container">
+            <img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" alt="Cute New Year Gif">
+        </div>
+        <button onclick="showMessage()">Click for a Surprise!</button>
+        <p id="surprise-message" style="display: none; margin-top: 20px; font-size: 1.2rem;">🎆 Cheers to us and an amazing 2024! 🎆</p>
+    </div>
+
+    <audio id="background-music" autoplay loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <footer>Made with ❤️ for Jyoti</footer>
+
+    <script>
+        function showMessage() {
+            const message = document.getElementById('surprise-message');
+            message.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
