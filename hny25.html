@@ -61,6 +61,13 @@
     </style>
 </head>
 <body>
+    <button onclick="playMusic()">Yahan Dabao Pehle!</button>
+<script>
+    function playMusic() {
+        const audio = document.getElementById('background-music');
+        audio.play().catch((error) => console.error('Playback failed:', error));
+    }
+</script>
     <div>
         <h1>Happy New Year, Jyoti! 🎉</h1>
         <p>You're the best friend anyone could ever ask for. Wishing you a year full of joy and love! ❤️</p>
