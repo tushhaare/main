@@ -72,7 +72,7 @@
     </div>
 
     <audio id="background-music" autoplay loop>
-        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
 
@@ -82,6 +82,16 @@
         function showMessage() {
             const message = document.getElementById('surprise-message');
             message.style.display = 'block';
+            document.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('background-music');
+
+    // Play music on any user interaction
+    document.body.addEventListener('click', () => {
+        if (audio.paused) {
+            audio.play().catch((error) => console.error('Playback failed:', error));
+        }
+    });
+});
         }
     </script>
 </body>
